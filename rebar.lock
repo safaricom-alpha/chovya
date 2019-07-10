@@ -1,0 +1,16 @@
+{"1.1.0",
+[{<<"goldrush">>,{pkg,<<"goldrush">>,<<"0.1.9">>},1},
+ {<<"lager">>,
+  {git,"git://github.com/erlang-lager/lager.git",
+       {ref,"27a075b0c488a9d334fc7a98b412c6bcf217be89"}},
+  0},
+ {<<"mysql">>,
+  {git,"git://github.com/mysql-otp/mysql-otp.git",
+       {ref,"9a98eff7a127a5012c45e4b8bd845b0befccf0a9"}},
+  0},
+ {<<"worker_pool">>,{pkg,<<"worker_pool">>,<<"4.0.0">>},0}]}.
+[
+{pkg_hash,[
+ {<<"goldrush">>, <<"F06E5D5F1277DA5C413E84D5A2924174182FB108DABB39D5EC548B27424CD106">>},
+ {<<"worker_pool">>, <<"CD94D94D3B1A2442E54DB001B0B3BA0BD1F9D8098F4253F57228C021524BB55B">>}]}
+].
