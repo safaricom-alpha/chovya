@@ -1,15 +1,22 @@
-{application, chovya,
- [{description, "An OTP application"},
-  {vsn, "0.1.0"},
-  {registered, []},
-  {mod, {chovya_app, []}},
-  {applications,
-   [kernel,
-    stdlib
-   ]},
-  {env,[]},
-  {modules, []},
-
-  {licenses, ["Apache 2.0"]},
-  {links, []}
- ]}.
+{ application, chovya, [
+    {description, "An OTP Database Wrapper application (Initially for mysql-otp)"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {mod, {chovya_app, []}},
+    {applications, [
+        kernel,
+        stdlib,
+        config_parser,
+        lager,
+        mysql,
+        worker_pool,
+        lager
+    ]},
+    {maintainers, ["@SafaricomAlpha", "@cmush", "ESL", "@DenysGonchar"]},
+    {licenses, ["Apache 2.0"]},
+    {links, [{"Github", "https://github.com/safaricom-alpha/chovya"}]},
+    {build_tools, ["rebar3"]},
+    {env, [{config_file, "chovya.cfg"}]},
+    {modules, []},
+    {licenses, ["Apache 2.0"]}
+]}.
