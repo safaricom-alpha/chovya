@@ -2,7 +2,7 @@
     {description, "An OTP Database Wrapper application (Initially for mysql-otp)"},
     {vsn, "0.1.0"},
     {registered, []},
-    {mod, {chovya_app, []}},
+    {mod, {chovya_app, [config_parser]}},
     {applications, [
         kernel,
         stdlib,
